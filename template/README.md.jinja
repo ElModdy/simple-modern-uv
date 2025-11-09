@@ -1,22 +1,32 @@
 # {{ package_name }}
 
-👉\[\[\[**This is the initial readme for your
-[simple-modern-uv](https://github.com/jlevy/simple-modern-uv) template.** Fill it in and
-delete this message!
-Below are general setup instructions that you may remove or keep and adapt for your
-project.\]\]\]
+{{ package_description }}
 
-* * *
+## Getting Started
 
-## Project Docs
+To get started with this project, you'll need to have [uv](https://docs.astral.sh/uv/) installed.
 
-For how to install uv and Python, see [installation.md](installation.md).
+Once you've cloned the repository, you can install all the necessary development dependencies with a single command:
 
-For development workflows, see [development.md](development.md).
+```shell
+make install
+```
 
-For instructions on publishing to PyPI, see [publishing.md](publishing.md).
+This will create a virtual environment in `.venv` and install all the packages defined in `pyproject.toml`.
 
-* * *
+## Development
 
-*This project was built from
+This project uses `ruff` for linting and formatting, and `basedpyright` for type checking. The recommended setup for VS Code is included in the `.vscode/settings.json` file.
+
+You can run the linters and tests with the following commands:
+
+```shell
+# Run linting and formatting
+make lint
+
+# Run tests
+make test
+```
+
+*This project was built from a streamlined version of
 [simple-modern-uv](https://github.com/jlevy/simple-modern-uv).*
