@@ -2,31 +2,23 @@
 
 {{ package_description }}
 
-## Getting Started
+## Setup
 
-To get started with this project, you'll need to have [uv](https://docs.astral.sh/uv/) installed.
-
-Once you've cloned the repository, you can install all the necessary development dependencies with a single command:
+Requires [uv](https://docs.astral.sh/uv/).
 
 ```shell
+# 1. Clone the repository and navigate into it
+# 2. Install dependencies
 make install
 ```
 
-This will create a virtual environment in `.venv` and install all the packages defined in `pyproject.toml`.
+This command creates a virtual environment in `.venv` and installs all necessary packages defined in `pyproject.toml`.
 
-## Development
+## Development Workflow
 
-This project uses `ruff` for linting and formatting, and `basedpyright` for type checking. The recommended setup for VS Code is included in the `.vscode/settings.json` file.
+This template is optimized for VS Code and includes a recommended configuration in `.vscode/settings.json` that enables format-on-save.
 
-You can run the linters and tests with the following commands:
+- **Lint & Format:** `make lint`
+- **Run Tests:** `make test`
 
-```shell
-# Run linting and formatting
-make lint
-
-# Run tests
-make test
-```
-
-*This project was built from a streamlined version of
-[simple-modern-uv](https://github.com/jlevy/simple-modern-uv).*
+*This project was built from a streamlined version of [simple-modern-uv](https://github.com/jlevy/simple-modern-uv).*
