@@ -20,7 +20,7 @@ This template uses [Copier](https://github.com/copier-org/copier). To create a n
 uv tool install copier
 
 # Create a new project from the template
-copier copy gh:jlevy/simple-modern-uv YOUR_NEW_PROJECT_NAME
+copier copy gh:ElModdy/simple-modern-uv YOUR_NEW_PROJECT_NAME
 ```
 
 Copier will prompt you for the project name, description, and other details.
