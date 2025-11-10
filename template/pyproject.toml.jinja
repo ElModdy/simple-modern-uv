@@ -14,7 +14,7 @@ authors = [
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.11,<4.0"
-version = "0.1.0"
+dynamic = ["version"]
 
 # https://pypi.org/classifiers/
 # Adjust as needed:
@@ -65,8 +65,19 @@ dev = [
 # https://github.com/ninoseki/uv-dynamic-versioning/
 
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling", "uv-dynamic-versioning"]
 build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "uv-dynamic-versioning"
+# Note JSON schemas don't seem to be right for tool.hatch.version.source so
+# this may cause false warnings in IDEs.
+# https://github.com/ninoseki/uv-dynamic-versioning/issues/21
+
+[tool.uv-dynamic-versioning]
+vcs = "git"
+style = "pep440"
+bump = true
 
 [tool.hatch.build.targets.wheel]
 # The source location for the package.
