@@ -23,7 +23,9 @@ uv tool install copier
 copier copy gh:ElModdy/simple-modern-uv YOUR_NEW_PROJECT_NAME
 ```
 
-Copier will prompt you for the project name, description, and other details.
+Copier will prompt you for a project name.
+
+> **Note:** This template sets up a standard Python project (which is technically a "package"), but this does not mean it has to be published to PyPI.
 
 Once the project is created, navigate into the directory and run:
 
