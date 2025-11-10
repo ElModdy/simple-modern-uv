@@ -1,0 +1,22 @@
+{
+    // Set the default interpreter to the one in the virtual environment.
+    // This ensures that VS Code uses the correct dependencies.
+    "python.defaultInterpreterPath": "./.venv/bin/python",
+
+    // Enable format on save for all files.
+    "editor.formatOnSave": true,
+
+    // Configure the Ruff extension as the default formatter for Python files.
+    // This also enables format-on-save and organize-imports-on-save for Python.
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        }
+    },
+
+    // Configure BasedPyright for type checking.
+    "basedpyright.importStrategy": "useBundled",
+    "basedpyright.analysis.typeCheckingMode": "strict"
+}
